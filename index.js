@@ -108,7 +108,7 @@ function Resolver_1(ens, node, contract) {
                 return _.partial(instance.methods[signature], node).apply(instance.methods, args).send(params ? params : {from: accounts[0]});
               })
             }
-          }).bind(this);
+          })
         }.bind(this);
     }.bind(this));
 }
